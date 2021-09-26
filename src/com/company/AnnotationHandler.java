@@ -3,7 +3,7 @@ package com.company;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
-class Handler{
+class AnnotationHandler {
     public static void handle(Object o) throws IllegalAccessException {
         for(Field field : o.getClass().getDeclaredFields()) {
             if (field.getAnnotation(Printable.class) == null)
